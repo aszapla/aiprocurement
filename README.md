@@ -1,0 +1,2 @@
+# aiprocurement
+ai procurement course
