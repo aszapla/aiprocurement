@@ -1,0 +1,144 @@
+/* Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    --navy: #2A3F54;
+    --gold: #FFD700;
+    --gray-light: #F5F5F5;
+    --gray-dark: #333333;
+    --green: #009900;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: var(--navy);
+    color: white;
+    padding: 1rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(42, 63, 84, 0.8), rgba(42, 63, 84, 0.8)), 
+                url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Modules Grid */
+.modules {
+    padding: 3rem 0;
+}
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.module-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.module-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    height: 10px;
+    background: var(--gray-light);
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.progress {
+    height: 100%;
+    background: var(--gold);
+    border-radius: 5px;
+}
+
+/* Module Page */
+.module-page {
+    padding: 2rem 0;
+}
+
+.video-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.video-section iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: 2px solid var(--navy);
+    border-radius: 8px;
+}
+
+.video-caption {
+    color: var(--gray-dark);
+    font-size: 0.9rem;
+}
+
+.key-takeaways {
+    background: var(--gray-light);
+    padding: 1.5rem;
+    border-left: 4px solid var(--green);
+    margin: 2rem 0;
+}
+
+.quiz-cta {
+    display: inline-block;
+    background: var(--navy);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-section iframe {
+        height: 250px;
+    }
+}
